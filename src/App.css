@@ -1,0 +1,25 @@
+.layout-main {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.layout-main .layout-left {
+  width: 15%;
+  margin-right: 10px;
+}
+.layout-main .layout-left div {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: lightblue;
+  margin-bottom: 5px;
+}
+
+.layout-main .layout-right {
+  width: 75%;
+  border: 1px solid lightblue;
+  padding: 10px;
+  min-height: 300px;
+}
