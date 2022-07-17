@@ -3,7 +3,7 @@ import { Route, Routes, useNavigate } from 'react-router-dom';
 import NotFoundPage from './error/404';
 import IndexPage from './page';
 import HocPage from './page/hoc';
-
+import ProvideContext from './page/context/provider';
 function App() {
   const Navigate = useNavigate();
   const menu = [
@@ -16,6 +16,11 @@ function App() {
       name: 'Hoc',
       path: '/hoc',
       element: <HocPage></HocPage>,
+    },
+    {
+      name: 'context',
+      path: '/context',
+      element: <ProvideContext></ProvideContext>,
     },
     {
       name: '404',
