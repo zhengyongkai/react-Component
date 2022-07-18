@@ -1,6 +1,7 @@
 import { Button } from 'antd';
 import React, { useState } from 'react';
 import ConsumerPage from './Consumer';
+import PureConsumer from './PureConsumer';
 export const ThemeContext = React.createContext(null);
 
 function ProvideContext() {
@@ -17,6 +18,7 @@ function ProvideContext() {
       <br />
       <br />
       <ConsumerPage></ConsumerPage>
+      <PureConsumer></PureConsumer>
     </ThemeContext.Provider>
   );
 }

@@ -4,6 +4,8 @@ import NotFoundPage from './error/404';
 import IndexPage from './page';
 import HocPage from './page/hoc';
 import ProvideContext from './page/context/provider';
+import FatherPage from './page/useCallback';
+import MenoFatherPage from './page/useMeno';
 function App() {
   const Navigate = useNavigate();
   const menu = [
@@ -21,6 +23,16 @@ function App() {
       name: 'context',
       path: '/context',
       element: <ProvideContext></ProvideContext>,
+    },
+    {
+      name: 'useCallback',
+      path: '/useCallback',
+      element: <FatherPage></FatherPage>,
+    },
+    {
+      name: 'MenoFatherPage',
+      path: '/MenoFatherPage',
+      element: <MenoFatherPage></MenoFatherPage>,
     },
     {
       name: '404',
